@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(26, 110, 167);
+}
+.conver-label{
+    margin: 2px;
+}
+.input-field{
+    width: 30%;
+}
+.btn-convert{
+    margin-right: 0px;
+}
+.resetbtn{
+    color:white;
+    margin-left: 0px;
+}
