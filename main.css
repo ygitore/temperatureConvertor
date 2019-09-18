@@ -1,16 +1,25 @@
 body{
-    background-color: rgb(26, 110, 167);
+    background-color: #0A7798;
+    color: white;
 }
-.conver-label{
-    margin: 2px;
+h1{
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
 }
-.input-field{
-    width: 30%;
-}
-.btn-convert{
+.btn-success{ 
     margin-right: 0px;
 }
-.resetbtn{
-    color:white;
-    margin-left: 0px;
+.alert{
+    margin-left: 44%;
+}
+.form-check{
+    margin-left: 48%;
+}
+.btn-toolbar{
+    margin: 20px;
+}
+.temperatureConvertion{
+    margin-top: 40px;
+    margin-left: 31%;
 }
