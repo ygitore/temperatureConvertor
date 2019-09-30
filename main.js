@@ -9,29 +9,36 @@ const toCelsius =  () => {
     const number = userInput.value;
     const inCelisius = (number-32)*5/9;
     output.innerHTML = inCelisius;
-    if(inCelisius>32){     
+    if(inCelisius>32){  
+      output.style.color = "white";   
       output.style.backgroundColor = "red";;
-      output.innerHTML = Math.round(inCelisius)+'°C'; 
+      output.value = Math.round(inCelisius)+' °C'; 
     }else if(inCelisius<0){
+      output.style.color = "white";
       output.style.backgroundColor = "blue";;
-      output.innerHTML = Math.round(inCelisius)+'°C'; 
+      output.value = Math.round(inCelisius)+' °C'; 
     }else{
+      output.style.color = "white";
       output.style.backgroundColor = "green";;
-      output.innerHTML = Math.round(inCelisius)+'°C';    
+      output.value = Math.round(inCelisius)+' °C';    
     }
 }
 const toFahrenheit =  () => {
     const number = userInput.value;
     const inFarenheit = (number*9/5)+32;
     if(inFarenheit>90){     
-      output.style.backgroundColor = "red";;
-      output.innerHTML = Math.round(inFarenheit)+'°F'; 
+      output.style.backgroundColor = "red";
+      output.style.color = "white";
+      output.value = Math.round(inFarenheit)+' °F'; 
+      console.log(inFarenheit);
     }else if(inFarenheit<32){
+      output.style.color = "white";
       output.style.backgroundColor = "blue";
-      output.innerHTML = Math.round(inFarenheit)+'°F'; 
+      output.value = Math.round(inFarenheit)+' °F'; 
     }else{
+      output.style.color = "white";
       output.style.backgroundColor = "green";;
-      output.innerHTML = Math.round(inFarenheit)+'°F'; 
+      output.value = Math.round(inFarenheit)+' °F'; 
     }
 }
 const determineConverter = () => {
