@@ -8,39 +8,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
 </head>
-<body>
-    
-    <h1>Temperature Converter</h1>
-    <form>
-        <div class="form-group row temperatureConvertion">
-          <label for="colFormLabelSm" class="col-md-2 col-form-label col-form-label-sm">Temperature</label>
-          <div class="col-md-3">
-            <input type="number" class="form-control form-control-sm" id="user-input-field" placeholder="Numeric value only" required>
-          </div>
-        </div>
-    </form>
-    <div class="form-check">
+<body> 
+    <div class="d-flex justify-content-center temperatureConverter">Temperature Converter </div> 
+    <div class="row tempLabelAndInoutField">
+        <label class="tempLabel">Convert</label>
+        <input type="number" class="form-control form-control-sm input-width" id="user-input-field" placeholder="Numeric value only" required>
+    </div>
+    <div class="rdioFnCs">
+      <div class="form-check">
         <input class="form-check-input" type="radio" name="exampleRadios" id="rdb-fahrenheit" value="option1">
         <label class="form-check-label" for="Fahrenheit">
           Fahrenheit
         </label>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="rdb-celsius" value="option2">
-        <label class="form-check-label" for="Celsius">
-          Celsius
-        </label>
-      </div>
-    <div class="btn-toolbar d-flex justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="rdb-celsius" value="option2">
+          <label class="form-check-label" for="Celsius">
+            Celsius
+          </label>
+    </div>
+    <div class="btn-toolbar btn-clearAndConvert" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group mr-2" role="group" aria-label="First group">
-          <button id="btn-convert" type="button" class="btn btn-success ">Convert</button>
+          <button id="btn-convert" type="button" class="btn btn-success btn-sm">Convert</button>
         </div>
         <div class="btn-group mr-2" role="group" aria-label="Second group">
-          <button id="btn-clear" type="button" class="btn btn-danger">Clear</button>
+          <button id="btn-clear" type="button" class="btn btn-danger btn-sm">Clear</button>
         </div>        
     </div>
-    <div class="alert alert-info col-md-2" id="output" role="alert">    
-    </div>
+    <div>
+        <input class="form-control-sm align-items-center output"  type="text" id = "output" readonly>
+    </div> 
     <script src="./main.js"></script>
 </body>
 </html>
